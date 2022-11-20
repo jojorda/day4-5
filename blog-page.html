@@ -1,0 +1,104 @@
+<html>
+<head>
+    <title>Blog Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/blog-page.css">
+
+</head>
+<body>
+    <nav>    
+        <div class="logo">
+            <img src="img/logo.png" alt="">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="myProject"><a href="#">Project</a></li>
+        </ul>
+
+        <div class="contact">
+            <button>
+                <a href="contact.html">Contact Me</a>
+            </button>
+        </div>
+        
+    </nav>
+
+    <div class="form">
+        <div class="my-project">
+            <h1>I in PROJECT</h1>
+        </div>
+        <div class="my-project-form">
+            <form action="" onsubmit="addData(event)">
+
+                <div class="name">
+                    <label for="project-name">Project Name</label>
+                    <input type="text" id="project-name">
+                </div>
+                <div class="date-pro">
+                    <div class="start-date">    
+                        <label for="start-date">Start Date</label>
+                        <input type="start-date" id="start-date">
+                    </div>
+                    <div class="end-date">
+                        <label for="end-date">End Date</label>
+                        <input type="end-date" id="end-date">
+                    </div>
+                </div>
+                <div class="description">
+                        <label for="description-box">Description</label>
+                        <textarea name="description" id="description-box" cols="30" rows="10"></textarea>
+                </div>
+                <div class="checkbox">
+                    <div><p>Technologies</p>
+                        <div class="form-checkbox">
+                            <div class="form-checkbox1">
+                                <div class="nodeJs">
+                                    <input type="checkbox" name="nodejs" id="nodejs">
+                                    <label for="nodejs">Node JS</label>
+                                </div>
+                                <div class="reactJs">
+                                    <input type="checkbox" name="reactjs" id="reactjs">
+                                    <label for="reactjs">React JS</label>
+                                </div>
+                            </div>
+                            <div class="form-checkbox2">
+                                <div class="nextJs">
+                                    <input type="checkbox" name="nextjs" id="nextjs">
+                                    <label for="nextjs">Next JS</label>
+                                </div>
+                                <div class="typeScript">
+                                    <input type="checkbox" name="typescript" id="typescript">
+                                    <label for="typescript">TypeScript</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="image">
+                    <label for="upload-image">Upload Image</label>
+                    <div class="input-image">
+                        <label for="input-image">
+                            <p>choose</p>
+                            <img src="img/file.png" alt="file">
+                        </label>
+                        <input type="file" id="input-image" hidden>
+                    </div>
+                </div>
+
+                <div class="button-group">
+                    <button>Submit</button>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+
+    <div class="blog">
+        <div class="output-myproject">
+            <h1>My Project</h1>
+        </div>
+    </div>
+<script src="js/blog.js"></script>
+</body>
+</html>
